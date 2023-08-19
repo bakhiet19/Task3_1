@@ -343,6 +343,7 @@ footer .container .child{
     footer .container .child{
         max-width: 90%;
         text-align: center;
+        margin-top: 1rem;
     }
     .portfolio .child img{
         width: 90%;
