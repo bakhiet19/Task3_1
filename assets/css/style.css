@@ -353,11 +353,13 @@ footer .container .child{
     }
     .portfolio .child{
         margin: 0 auto;
+       
     }
     .portfolio .child img{
         max-width: 80%;
         min-width: 80%;
         opacity: 0.5;
+        margin-left: 5%;
     }
     .about .parent .child{
         max-width: 95%;
