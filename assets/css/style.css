@@ -344,7 +344,7 @@ footer .container .child{
         flex-direction: column;
     }
     .portfolio .child img{
-        max-width: 200px;
+        max-width: 300px;
         opacity: 1;
     }
     footer .container .child{
