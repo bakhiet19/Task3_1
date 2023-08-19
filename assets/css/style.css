@@ -125,6 +125,7 @@ header{
     justify-content: center;
     gap: 1rem;
     margin-top: 30px;
+    max-width: 100%;
 }
 
 .portfolio .child img{
@@ -223,6 +224,11 @@ header{
     border-bottom: 2px solid var(--second-color);
     outline: none;
 }
+
+
+
+
+
 
 
 
@@ -343,10 +349,14 @@ footer .container .child{
     footer .container .child{
         max-width: 90%;
         text-align: center;
-        margin-top: 20px;
+        margin-top: 1.5rem;
+    }
+    .portfolio .child{
+        margin: 0 auto;
     }
     .portfolio .child img{
-        width: 90%;
+        max-width: 80%;
+        min-width: 80%;
         opacity: 0.5;
     }
     .about .parent .child{
