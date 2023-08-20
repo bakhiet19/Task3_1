@@ -252,16 +252,20 @@ footer .container i{
     padding: 7px;
     border-radius: 50%;
     color: var(--text-color);
+    margin: 0 5px;
 }
 
 
 footer .container i:hover{
     border: 2px solid var(--second-color);
 }
-
+footer .parent{
+    justify-content: space-between;
+    text-align: center;
+}
 
 footer .container .child{
-    max-width: 30%;
+    max-width: calc(97% / 3);
 }
 
 
@@ -364,7 +368,7 @@ footer .container .child{
         max-height: 200px;
         min-height: 200px;
         min-width: 300px;
-        margin-left: 5%;
+        /* margin-left: 5%; */
     }
     .about .parent .child{
         max-width: 95%;
