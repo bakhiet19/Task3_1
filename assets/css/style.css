@@ -123,6 +123,7 @@ header{
     width: 30%;
     max-height: 200px;
     opacity: 0.5;
+    border-radius: 10px;
 }
 
 .portfolio .child img:hover{
