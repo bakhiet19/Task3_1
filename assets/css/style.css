@@ -43,6 +43,8 @@ header{
     padding: 6px;
     color: var(--text-color);
     z-index: 1000;
+    min-width: 100%;
+    max-width: 100%;
 }
 
 .nav-flex{
