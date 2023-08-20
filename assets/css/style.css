@@ -5,6 +5,7 @@
     text-decoration: none;
     text-transform: capitalize;
     list-style-type: none;
+    
 }
 
 
@@ -309,6 +310,12 @@ footer .container .child{
 
     body{
         overflow-x: hidden;
+    }
+    header{
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
     }
     .container{
         width: 420px;
