@@ -34,9 +34,14 @@ h1,h2{
 
 
 header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
     background-color: var(--main-color);
     padding: 6px;
     color: var(--text-color);
+    z-index: 1000;
 }
 
 .nav-flex{
