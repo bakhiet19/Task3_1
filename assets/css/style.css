@@ -337,6 +337,9 @@ footer .container .child{
         padding: 13px;
         font-size: 12px;
     }
+    .about .parent .child p{
+        margin: 0 2rem;
+    }
     footer .parent{
         flex-direction: column;
         
@@ -352,6 +355,9 @@ footer .container .child{
         max-width: 90%;
         text-align: center;
         margin-top: 1.5rem;
+    }
+    footer .container .child p{
+        margin: 0 1rem;
     }
     .portfolio .child{
         margin: 0 auto;
