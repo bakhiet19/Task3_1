@@ -40,7 +40,7 @@ header{
     right: 0;
     left: 0;
     background-color: var(--main-color);
-    padding: 6px;
+    padding: 6px 0;
     color: var(--text-color);
     z-index: 1000;
     min-width: 100%;
