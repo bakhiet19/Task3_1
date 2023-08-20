@@ -307,7 +307,9 @@ footer .container .child{
 
 @media(max-width: 480px ){
 
-
+    body{
+        overflow-x: hidden;
+    }
     .container{
         width: 420px;
         margin: 0 auto;
