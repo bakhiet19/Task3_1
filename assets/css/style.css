@@ -5,7 +5,7 @@
     text-decoration: none;
     text-transform: capitalize;
     list-style-type: none;
-    
+    scroll-behavior: smooth;
 }
 
 
