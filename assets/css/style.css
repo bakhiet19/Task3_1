@@ -365,6 +365,7 @@ footer .container .child{
         min-height: 200px;
         min-width: 300px;
         margin-left: 5%;
+        margin : 0 auto;
     }
     .about .parent .child{
         max-width: 95%;
