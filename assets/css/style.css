@@ -356,8 +356,8 @@ footer .container .child{
        
     }
     .portfolio .child img{
-        max-width: 80%;
-        min-width: 80%;
+        max-width: 40%;
+        min-width: 40%;
         opacity: 0.5;
         margin-left: 5%;
     }
