@@ -225,6 +225,9 @@ header{
     outline: none;
 }
 
+.contact form input:last-child{
+    border: 1px solid var(--text-color);
+}
 
 .contact form textarea:focus{
     border-bottom: 2px solid var(--second-color);
@@ -385,6 +388,7 @@ footer .container .child{
         max-height: 200px;
         min-height: 200px;
         min-width: 300px;
+        opacity: 1;
         /* margin-left: 5%; */
     }
     .about .parent .child{
