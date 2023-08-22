@@ -419,7 +419,7 @@ footer p span{
         justify-content: center;
     }
     .about .parent .child {
-        max-width: 90%;
+        max-width: 97%;
         padding: 13px;
         font-size: 12px;
     }
@@ -429,7 +429,15 @@ footer p span{
 
     .portfolio .child{
         flex-direction: column;
-        margin-top: 50px;
+        margin: 50px auto;
+    }
+    .portfolio .child img{
+        margin: 15px auto;
+        max-width: 300px;
+        max-height: 200px;
+        min-height: 200px;
+        min-width: 300px;
+        opacity: 1;
     }
     .foot .parent{
         flex-direction: column;
@@ -445,22 +453,8 @@ footer p span{
     .foot .container .child p{
         margin: 0 .5rem;
     }
-    .portfolio .child{
-        margin: 0 auto;
-       
-    }
-    .portfolio .child img{
-        margin: 15px auto;
-        max-width: 300px;
-        max-height: 200px;
-        min-height: 200px;
-        min-width: 300px;
-        opacity: 1;
-        /* margin-left: 5%; */
-    }
-    .about .parent .child{
-        max-width: 95%;
-    }
+   
+
     .foot .container h3{
         margin-bottom: 0.5rem;
         color: var(--second-color);
