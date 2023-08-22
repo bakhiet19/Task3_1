@@ -338,6 +338,13 @@ header{
     max-width: calc(97% / 3);
 }
 
+/* end foot section */
+
+
+
+
+
+
 
 footer{
     padding: 13px;
@@ -419,24 +426,24 @@ footer p span{
     .about .parent .child p{
         margin: 0 2rem;
     }
-    .foot .parent{
-        flex-direction: column;
-        
-    }
-    .foot .parent .child{
-        text-align: center;
-    }
+
     .portfolio .child{
         flex-direction: column;
         margin-top: 50px;
     }
+    .foot .parent{
+        flex-direction: column;
+        
+    }
+    
     .foot .container .child{
-        max-width: 90%;
+        text-align: center;
+        max-width: 100%;
         text-align: center;
         margin-top: 1.5rem;
     }
     .foot .container .child p{
-        margin: 0 1rem;
+        margin: 0 .5rem;
     }
     .portfolio .child{
         margin: 0 auto;
