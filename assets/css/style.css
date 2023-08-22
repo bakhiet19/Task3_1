@@ -1,3 +1,6 @@
+/* start global */
+
+
 *{
     margin: 0;
     padding: 0;
@@ -17,6 +20,7 @@
     --margin-left : 10px;
     --text-color : #eee;
     --margin-v : 60px;
+    --margin-b :5px;
 }
 
 h1,h2{
@@ -24,8 +28,36 @@ h1,h2{
     text-transform: uppercase;
     text-align: center;
     color: var(--main-color);
-    font-weight: bold;
+    font-weight: var(--font-weight);
 }
+
+
+.i{
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.i i{
+    position: relative;
+    margin: 0 5px;
+    color: var(--text-color);
+}
+
+.i .left{
+    width: 40px;
+    height: 2px;
+    background-color: var(--text-color);
+}
+
+
+/* end global */
+
+
+
+
 
 
 
@@ -93,6 +125,14 @@ header{
     border-radius: 50%;
     width: 175px;
     height: 175px;
+    transition: all 1s ease-in-out;
+    margin-bottom: 10px;
+}
+
+.landing div img:hover{
+    cursor: pointer;
+    margin-bottom: 20px;
+    transform: scale(1.2);
 }
 
 .landing p{
@@ -115,6 +155,12 @@ header{
     margin-bottom: var(--margin-v);
 }
 
+.portfolio .i i{
+    color: var(--second-color);
+}
+.portfolio .i .left{
+    background-color: var(--second-color);
+}
 
 .portfolio .child{
     justify-content: center;
@@ -128,11 +174,13 @@ header{
     max-height: 200px;
     opacity: 0.5;
     border-radius: 10px;
+    transition: all 1s ease-in-out;
 }
 
 .portfolio .child img:hover{
     opacity: 1;
     cursor: pointer;
+    transform: rotatex(360deg)
 }
 
 
@@ -154,7 +202,7 @@ header{
 
 .about h2{
     margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: var(--margin-b);
     padding-top: 2rem;
     color: var(--main-color);
 }
@@ -180,7 +228,7 @@ header{
     outline: none;
     border: none;
     border: 1px solid var(--text-color);
-    margin: 30px auto;
+    margin: 20px auto;
     display: block;
     background-color: var(--second-color);
     color: var(--text-color);
@@ -192,7 +240,7 @@ header{
     cursor: pointer;
 }
 
-
+/* end about section */
 
 
 
@@ -204,6 +252,15 @@ header{
     margin-bottom: var(--margin-v);
 }
 
+
+.contact .i i{
+    color: var(--second-color);
+}
+.contact .i .left{
+    background-color: var(--second-color);
+}
+
+
 .contact .container form{
    flex-wrap: wrap;
    justify-content: center;
@@ -212,7 +269,7 @@ header{
 }
 
 .contact h2{
-    margin-bottom: var(--margin-v);
+    margin-bottom: var(--margin-b);
 }
 
 .contact form input , textarea{
@@ -239,53 +296,60 @@ header{
 
 
 
-/* start footer section */
+/* start .foot section */
 
 
-footer{
+.foot{
     margin-top: var(--margin-v);
     background-color: var(--main-color);
     padding: 35px 20px;
     color: var(--text-color);
 }
 
-footer .parent{
+.foot.parent{
     justify-content: space-between;
 }
 
 
-footer .container h3{
-    margin-bottom: 1rem;
+.foot .container h3{
+    margin-bottom: var(--margin-b);
     color: var(--second-color);
 }
 
 
-footer .container i{
+.foot .container i{
     border: 1px solid var(--text-color);
     padding: 7px;
     border-radius: 50%;
     color: var(--text-color);
-    margin: 0 5px;
+    margin: 0 var(--margin-b);
 }
 
 
-footer .container i:hover{
+.foot .container i:hover{
     border: 2px solid var(--second-color);
 }
-footer .parent{
+.foot .parent{
     justify-content: space-between;
     text-align: center;
 }
 
-footer .container .child{
+.foot .container .child{
     max-width: calc(97% / 3);
 }
 
 
+footer{
+    padding: 13px;
+    background-color: #0c0032;
+    color: var(--text-color);
+    text-align: center;
+}
 
 
-
-
+footer p span{
+    color: var(--second-color);
+}
 
 
 
@@ -314,9 +378,6 @@ footer .container .child{
 
 @media(max-width: 480px ){
 
-    /* body{
-        overflow-x: hidden;
-    } */
     header{
         position: fixed;
         top: 0;
@@ -358,23 +419,23 @@ footer .container .child{
     .about .parent .child p{
         margin: 0 2rem;
     }
-    footer .parent{
+    .foot .parent{
         flex-direction: column;
         
     }
-    footer .parent .child{
+    .foot .parent .child{
         text-align: center;
     }
     .portfolio .child{
         flex-direction: column;
         margin-top: 50px;
     }
-    footer .container .child{
+    .foot .container .child{
         max-width: 90%;
         text-align: center;
         margin-top: 1.5rem;
     }
-    footer .container .child p{
+    .foot .container .child p{
         margin: 0 1rem;
     }
     .portfolio .child{
@@ -393,7 +454,7 @@ footer .container .child{
     .about .parent .child{
         max-width: 95%;
     }
-    footer .container h3{
+    .foot .container h3{
         margin-bottom: 0.5rem;
         color: var(--second-color);
     }
